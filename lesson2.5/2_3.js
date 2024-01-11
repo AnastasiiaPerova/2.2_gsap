@@ -21,6 +21,7 @@ console.log(fullPrice);
 
 
 
+
 //1 
 let allServicePrices;
 const getAllServicePrices = function () {
@@ -54,16 +55,18 @@ console.log(servicePercentPrice);
 
 
 
-let a = fullPrice;
-if (a >= 50000) {
-    console.log('Cкидка в 10%');
-} else if (a > 20000 && a < 50000) {
-    console.log('Cкидка 5%');
-} else if (a <= 20000 && a >= 0) {
-    console.log('Cкидка не предусмотрена');
-} else if (a < 0) {
-    console.log('Что то пошло не так');
+let rollbackMessage;
+
+const getRollbackMessage = function () {
+    if (fullPrice >= 50000) {
+        console.log('Cкидка в 10%');
+    } else if (fullPrice > 20000 && fullPrice < 50000) {
+        console.log('Cкидка 5%');
+    } else if (fullPrice <= 20000 && a >= 0) {
+        console.log('Cкидка не предусмотрена');
+    } else if (fullPrice < 0) {
+        console.log('Что то пошло не так');
+    }
 }
-
-
-
+rollbackMessage = getRollbackMessage();
+console.log(rollbackMessage);
