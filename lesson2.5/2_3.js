@@ -43,9 +43,9 @@ const getTitle = function () {
     return titleProject[0].toUpperCase() + titleProject.slice(1).toLowerCase()
 }
 newTitle = getTitle();
-console.log(newTitle);
 
 //4
+let servicePercentPrice;
 const getServicePercentPrices = function () {
     return fullPrice - (fullPrice * (percentage / 100));
 }
@@ -69,4 +69,3 @@ const getRollbackMessage = function () {
     }
 }
 rollbackMessage = getRollbackMessage();
-console.log(rollbackMessage);
