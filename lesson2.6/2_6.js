@@ -9,7 +9,7 @@ let rollbackMessage;
 let service1;
 let service2;
 
-
+//command slash / */   git add app.js-
 
 
 //Проверка на число:
@@ -26,7 +26,7 @@ const checkNumber = function (x) {
 
 
 const asking = function () {
-    titleProject = prompt('Название проекта?', 'бот');
+    titleProject = prompt(' Название проекта?', ' бот');
     screensValue = prompt('Шаблонные, с уникальным дизайном, с анимациями', 'Шаблонные');
 
     screenPrice = prompt('Cколько это будет стоить?', 80000);
@@ -80,7 +80,7 @@ function getFullPrice() {
 //Функция изменяет название проекта:
 
 const getTitle = function () {
-    return titleProject[0].toUpperCase() + titleProject.slice(1).toLowerCase()
+    return titleProject.trim()[0].toUpperCase() + titleProject.trim().slice(1).toLowerCase()
 }
 
 
