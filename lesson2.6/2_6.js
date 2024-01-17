@@ -9,7 +9,7 @@ let rollbackMessage;
 let service1;
 let service2;
 
-//command slash / */   git add app.js-
+
 
 
 //Проверка на число:
@@ -98,14 +98,16 @@ const getServicePercentPrices = function () {
 
 const getRollbackMessage = function (price) {
 
-    if (price >= 50000) {
+    if (price > 50000) {
         return 'Cкидка в 10%';
-    } else if (price > 20000 && price < 50000) {
+    } else if (price > 20000 && price < 40000) {
         return 'Cкидка 5%';
-    } else if (price <= 20000 && price >= 0) {
+    } else if (price < 20000 && price > 0) {
         return 'Cкидка не предусмотрена';
     } else if (price < 0) {
         return 'Что то пошло не так';
+    } else if (price === 0 || price === 20000 || price === 50000) {
+        return 'Проверка на строгое равенство';
     }
 }
 
